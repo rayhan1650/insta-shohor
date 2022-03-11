@@ -90,6 +90,65 @@
     </main>
     <section id="qna" class="container my-5">
       <h1 class="text-center">Question & Answer</h1>
+      <h2>
+        Q: What is the difference between local storage and session storage?
+      </h2>
+      <h4>Answer:</h4>
+      <table class="table table-bordered border-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Local Storage</th>
+            <th scope="col">Session Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>
+              Local storage used to store data for a long period so that user
+              can get his previous changed data even if he restart the browser.
+            </td>
+            <td>
+              Session storage used to store data temporarily and data is gone
+              after tab closed.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Generally local storage capacity is 5MB or 10MB.</td>
+            <td>Generally session storage capacity is 5MB.</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>
+              In local storage data can be cleared by manually or by JS code.
+            </td>
+            <td>In session storage data can be cleared when a tab closed.</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>
+              We can get local storage data by closing and restarting browser
+              and also by restarting computer.
+            </td>
+            <td>
+              We can get session storage data by refreshing the tab, but if we
+              close the tab or restart the browser, we lose data.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>
+              In local storage only client can read data but server can't.
+            </td>
+            <td>
+              Also in session storage only client can read data when session is
+              available, but server can't.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <footer></footer>
 
