@@ -88,67 +88,93 @@
         <h1>Reported posts</h1>
       </div>
     </main>
+
+    <!-- bonus part  -->
     <section id="qna" class="container my-5">
       <h1 class="text-center">Question & Answer</h1>
-      <h2>
-        Q: What is the difference between local storage and session storage?
-      </h2>
-      <h4>Answer:</h4>
-      <table class="table table-bordered border-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Local Storage</th>
-            <th scope="col">Session Storage</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>
-              Local storage used to store data for a long period so that user
-              can get his previous changed data even if he restart the browser.
-            </td>
-            <td>
-              Session storage used to store data temporarily and data is gone
-              after tab closed.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Generally local storage capacity is 5MB or 10MB.</td>
-            <td>Generally session storage capacity is 5MB.</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>
-              In local storage data can be cleared by manually or by JS code.
-            </td>
-            <td>In session storage data can be cleared when a tab closed.</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>
-              We can get local storage data by closing and restarting browser
-              and also by restarting computer.
-            </td>
-            <td>
-              We can get session storage data by refreshing the tab, but if we
-              close the tab or restart the browser, we lose data.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>
-              In local storage only client can read data but server can't.
-            </td>
-            <td>
-              Also in session storage only client can read data when session is
-              available, but server can't.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="my-5">
+        <h2>Q: How does javascript worked?</h2>
+        <h4>Answer:</h4>
+        <p class="fs-4">
+          When a browser or server gets javascript code, it has to convert js
+          code to machine-readable code because the machine can't understand js
+          code directly. To convert js code to machine-readable code, browser or
+          node.js server run time should have a mechanism. So every browser has
+          a javascript engine to convert js code to machine-readable code. In
+          Google Chrome JS engine name is the V8 engine that is also used in
+          node.js runtime. In Firefox it is SpiderMonkey, in Internet Explorer
+          it is Chakra, in Safari it is JavaScriptCore. Different browsers
+          implemented JS engines in different ways according to ECMAScript
+          specification. V8 engine takes js source code and by using Parser it
+          makes an Abstract Syntax Tree. After that it read every line of code
+          by Interpreter and it also use Compiler for boosting runtime
+          performance and convert js code to machine code. Then it generate byte
+          code and make an output into the display.
+        </p>
+      </div>
+
+      <div>
+        <h2>
+          Q: What is the difference between local storage and session storage?
+        </h2>
+        <h4>Answer:</h4>
+        <table class="table table-bordered border-dark fs-4">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Local Storage</th>
+              <th scope="col">Session Storage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                Local storage used to store data for a long period so that user
+                can get his previous changed data even if he restart the
+                browser.
+              </td>
+              <td>
+                Session storage used to store data temporarily and data is gone
+                after tab closed.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Generally local storage capacity is 5MB or 10MB.</td>
+              <td>Generally session storage capacity is 5MB.</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>
+                In local storage data can be cleared by manually or by JS code.
+              </td>
+              <td>In session storage data can be cleared when a tab closed.</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>
+                We can get local storage data by closing and restarting browser
+                and also by restarting computer.
+              </td>
+              <td>
+                We can get session storage data by refreshing the tab, but if we
+                close the tab or restart the browser, we lose data.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>
+                In local storage only client can read data but server can't.
+              </td>
+              <td>
+                Also in session storage only client can read data when session
+                is available, but server can't.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
     <footer></footer>
 
